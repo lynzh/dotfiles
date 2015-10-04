@@ -1,0 +1,21 @@
+#!/bin/bash
+# Script to deploy dotfiles and stuff
+
+# install vim rtorrent zsh
+# install steam lib32-nvidia-340xx-libgl wine
+# install gnome
+
+# scp -r lynzh@shell.ccnp.no:configs configs
+
+# make mountpoints for extra disks
+
+[ -d /mnt/ext1 ] && mount /dev/sdc1 /mnt/ext1 || [ ! -d /mnt/ext1 ] && mkdir /mnt/ext1 && mount /dev/sdc1 /mnt/ext1
+
+[ -d /mnt/ext2 ] && mount /dev/sdd1 /mnt/ext2 || [ ! -d /mnt/ext2 ] && mkdir /mnt/ext2 && mount /dev/sdd1 /mnt/ext2
+
+# Symlink up configs to ~/ 
+ln -s $HOME/configs/.Xresources		$HOME/.Xresources
+ln -s $HOME/configs/.rtorrent.rc 	$HOME/.rtorrent.rc
+ln -s $HOME/configs/.vimrc 		$HOME/.vimrc 
+ln -s $HOME/configs/.xinitrc		$HOME/.xinitrc
+ln -s $HOME/configs/.profile		$HOME/.profile 
