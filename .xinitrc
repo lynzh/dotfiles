@@ -1,1 +1,1 @@
-/home/lynzh/configs/.xinitrc
+exec gnome-session
