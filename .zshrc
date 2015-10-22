@@ -1,0 +1,1 @@
+/home/lynzh/.dotfiles/.zshrc
