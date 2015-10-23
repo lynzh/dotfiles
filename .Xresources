@@ -1,18 +1,1 @@
-# ~/.Xresources is linked to .Xdefaults
-# .Xresources is the default file 
-#define FONT           xft:Consolas:pixelsize=12:antialias=true:autohinting=true
-#define FONT_BOLD      xft:Consolas:bold:pixelsize=12:antialias=true:autohinting=true
-#define FONT_ITALIC    xft:Consolas:italic:pixelsize=12:antialias=true:autohinting=true
-#define FONT_UNDERLINE xft:Consolas:underline:pixelsize=12:antialias=true:autohinting=true
-
-URxvt.depth: 32
-URxvt.background: rgba:1111/1111/1111/dddd
-URxvt*foreground: white
-
-URxvt.scollstyle: rxvt
-URxvt.scrollBar: false
-URxvt.letterSpace: -2
-
-URxvt*font: 	xft:Consolas:pixelsize=12:antialias=true:autohinting=true
-! URxvt*boldFont:	FONT_BOLD
-
+configs/.Xresources
